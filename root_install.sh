@@ -78,10 +78,9 @@ fi
 
 echo -e "\n Downloading ROOT Release $version...."
 wget  https://root.cern.ch/download/${version}.source.tar.gz $HOME 
-cd $HOME
-tar xvzf ${version}.source.tar.gz
+tar xvzf ${version}.source.tar.gz -C $HOME
+cd $HOME/root*
 
-cd root*
 ./configure --all
 make -j8
 sudo make install
