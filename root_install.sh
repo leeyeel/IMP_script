@@ -86,5 +86,5 @@ make -j8
 sudo make install
 
 echo -e "#ROOT \n source $HOME/root/bin/thisroot.sh">>$HOME/.bashrc
-source $HOME/.bashrc
+bash $HOME/.bashrc
 fi
